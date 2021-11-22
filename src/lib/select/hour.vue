@@ -1,0 +1,13 @@
+<template>
+    <select :disabled="disabled" class="hours" @change="$emit('change', $event)" :value="value">
+            <option v-for="(n,index)  in 24" :key="index + n" :value="index">
+                {{index}}
+            </option>
+        </select>
+</template>
+<script>
+
+export default {
+    props:['disabled','value'],
+}
+</script>
