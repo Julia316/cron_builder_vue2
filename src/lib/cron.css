@@ -8,6 +8,7 @@
 .cron_builder_bordering input, .cron_builder_bordering select {
     width: 100px;
     height: 28px;
+    line-height: 28px;
     margin-right: 10px;
     margin-left: 10px;
     border: 1px solid #e9e9e9;
@@ -64,6 +65,7 @@
 .cron_builder .nav li {
     cursor: pointer;
     flex: 0 0 80px;
+    line-height: 40px;
     text-align: center;
     list-style-type: none;
 }

@@ -4,7 +4,7 @@ Simple vue component to generate cron expression
 
 Copy from https://www.npmjs.com/package/vue-cron-builder and modified to use vue v2.6.11
 
-original author is Sojin antony
+original author is **Sojin antony**
 
 ### how to use
 
@@ -67,7 +67,8 @@ const options = {
   headers: [HEADER.MONTHLY, HEADER.WEEKLY, HEADER.MINUTES, HEADER.HOURLY, HEADER.DAILY, HEADER.CUSTOM]
 };
 
-for more info, please check: https://github.com/sojinantony01/cron-generator-vue
+```
+for more info, please check original author's github [here](https://github.com/sojinantony01/cron-generator-vue) 
 
 
 
