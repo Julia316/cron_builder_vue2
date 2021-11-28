@@ -5,10 +5,10 @@ export const HEADER_VALUES = {
     DAILY: 'Daily',
     WEEKLY: 'Weekly',
     MONTHLY: 'Monthly',
-    CUSTOM: 'Custom'
+    ADVANCED: 'Advanced'
 };
 
-const defaultTabs = [HEADER_VALUES.MINUTES, HEADER_VALUES.HOURLY, HEADER_VALUES.DAILY, HEADER_VALUES.WEEKLY, HEADER_VALUES.MONTHLY, HEADER_VALUES.CUSTOM];
+const defaultTabs = [HEADER_VALUES.MINUTES, HEADER_VALUES.HOURLY, HEADER_VALUES.DAILY, HEADER_VALUES.WEEKLY, HEADER_VALUES.MONTHLY, HEADER_VALUES.ADVANCED];
 
 export const metadata = [{
     name: HEADER_VALUES.MINUTES,
@@ -26,8 +26,8 @@ export const metadata = [{
     name: HEADER_VALUES.MONTHLY,
     initialCron: ['0','0','0','1','1/1','?','*']
 }, {
-    name: HEADER_VALUES.CUSTOM,
-    initialCron: ['*','*','*','*','*','*','*']
+    name: HEADER_VALUES.ADVANCED,
+    initialCron: ['0','30','9','?','*','*','*']
 }];
 
 const validateHeaders = (headers) => {

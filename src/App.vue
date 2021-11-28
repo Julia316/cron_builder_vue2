@@ -5,6 +5,8 @@
 <script>
 import Cron from './lib/cron.vue'
 import './lib/cron.css'
+
+
 export default {
   name: 'App',
   components: {

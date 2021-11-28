@@ -14,7 +14,7 @@
                     <input type="checkbox" value="TUE" @change="onCheck" :checked="this.value[5].search('TUE') !== -1 ? true : false"/>{{$parent.translate('Tuesday')}}<br />
                     <input type="checkbox" value="THU" @change="onCheck" :checked="this.value[5].search('THU') !== -1 ? true : false"/>{{$parent.translate('Thursday')}}<br />
                     <input type="checkbox" value="SAT" @change="onCheck" :checked="this.value[5].search('SAT') !== -1 ? true : false"/>{{$parent.translate('Saturday')}}
-                </div><br /><br />
+                </div>
             </div>
         </div>
         {{$parent.translate('Start time')}}

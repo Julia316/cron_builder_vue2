@@ -13,18 +13,21 @@
                 <Daily v-if="selectedTab == headerValues.DAILY" :value="value" @change-val="changeVal"/>
                 <Weekly v-if="selectedTab == headerValues.WEEKLY" :value="value" @change-val="changeVal"/>
                 <Monthly v-if="selectedTab == headerValues.MONTHLY" :value="value" @change-val="changeVal"/>
-                <Custom v-if="selectedTab == headerValues.CUSTOM" :value="value" @change-val="changeVal"/>
+                <Custom v-if="selectedTab == headerValues.ADVANCED" :value="value" @change-val="changeVal"/>
             </div>
              <div class="cron-builder-bg" v-if="showResultText">
-                {{ getVal() }}
+                <!-- {{ getVal() }} -->
+                {{getResultText}}
             </div>
             <div v-if="showResultCron" class="cron-builder-bg">
-                {{getCronString(value)}}
+                <!-- {{getCronString(value)}} -->
+                {{cron}}
             </div>
         </div>
 </template>
 
 <script>
+import './cron.css';
 import cronstrue from 'cronstrue/i18n';
 import { metadata, loadHeaders, translateFn, HEADER_VALUES } from './meta';
 import Minutes from './cron-tab/minutes.vue';
@@ -84,7 +87,7 @@ export default {
             if(index != -1) {
                 this.selectedTab = tab;
             } else {
-                this.selectedTab = HEADER_VALUES.CUSTOM;
+                this.selectedTab = HEADER_VALUES.ADVANCED;
             }
         },
         setValue(value) {
@@ -110,7 +113,7 @@ export default {
             } else if (val[3].startsWith('L') || val[4] === '1/1') {
                 this.setTab(HEADER_VALUES.MONTHLY)
             } else {
-                 this.setTab(HEADER_VALUES.CUSTOM)
+                 this.setTab(HEADER_VALUES.ADVANCED)
             }
             this.value = val;
         },
@@ -128,14 +131,20 @@ export default {
             console.log('Warning !!! locale not set while using translations');
         }
     },
+    computed: {
+        getResultText: function(){
+            let val = cronstrue.toString(this.cron, { throwExceptionOnParseError: false, locale: this.locale ? this.locale : 'en' })
+            if(val.search('undefined') === -1) {
+                return val;
+            }
+            return '-';
+        }
+    },
     watch: {
         cron: {
             immediate: true, 
-            handler (val, oldVal) {
-                // if(val && (val != this.getCronString(this.value))) {
-                //     this.setValue(this.cron)
-                // }
-                if(val != oldVal){
+            handler (val) {
+                if(val && (val != this.getCronString(this.value))) {
                     this.setValue(this.cron)
                 }
             }
