@@ -1,120 +1,149 @@
 .cron_builder_bordering {
-    border: 1px solid #e9e9e9;
-    border-top: none;
-    text-align: center;
-    padding: 10px;
-    background: #fff;
+  border: 1px solid #e9e9e9;
+  border-top: none;
+  text-align: center;
+  padding: 10px;
+  background: #fff;
 }
-.cron_builder_bordering input, .cron_builder_bordering select {
-    width: 100px;
-    height: 28px;
-    line-height: 28px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border: 1px solid #e9e9e9;
-    border-radius: 4px;
-    outline: none;
-    padding-left: 5px;
-    cursor: pointer;
+.cron_builder_bordering input,
+.cron_builder_bordering select {
+  width: 100px;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 5px;
+  cursor: pointer;
 }
-.cron_builder_bordering .text_align_left input{
-    height: auto;
+.cron_builder_bordering .text_align_left input {
+  height: auto;
 }
 .df {
-    display: flex;
+  display: flex;
 }
 .cron-builder-bg {
-    background-color: #59a4c8;
-    color: white;
-    text-align: center;
-    margin-bottom: 4px;
-    padding: 8px 10px;
-    line-height: 21px;
-    word-break: keep-all;
+  background-color: #59a4c8;
+  color: white;
+  text-align: center;
+  margin-bottom: 4px;
+  padding: 8px 10px;
+  line-height: 21px;
+  word-break: keep-all;
 }
 .cron_builder_bordering select {
-    background-color: white;
-    width: 75px;
-    cursor: pointer;
-    padding: 4px 2px;
-    border-radius: 4px;
+  background-color: white;
+  width: 75px;
+  cursor: pointer;
+  padding: 4px 2px;
+  border-radius: 4px;
 }
 .cron_builder_bordering select option:hover {
-    background-color: #086090;
+  background-color: #086090;
 }
 .well-small input {
-    width: auto !important;
+  width: auto !important;
 }
-.cron_builder_bordering  input[type='radio'] {
-    margin-top: 0px;
-    vertical-align: middle;
+.cron_builder_bordering input[type="radio"] {
+  margin-top: 0px;
+  vertical-align: middle;
 }
 .cron_builder {
-    border: 1px solid #e9e9e9;
-    padding: 5px;
-    background-color: #dddef13d;
-    width: 100%;
-    max-width: 600px;
+  border: 1px solid #e9e9e9;
+  padding: 5px;
+  background-color: #dddef13d;
+  width: 100%;
+  max-width: 600px;
 }
 .text_align_left {
-    text-align: left;
+  text-align: left;
 }
 .cron_builder .nav {
-    display: flex;
+  display: flex;
 }
 .cron_builder .nav li {
-    cursor: pointer;
-    flex: 0 0 80px;
-    line-height: 40px;
-    text-align: center;
-    list-style-type: none;
+  cursor: pointer;
+  flex: 0 0 80px;
+  line-height: 40px;
+  text-align: center;
+  list-style-type: none;
 }
 .cron_builder .nav li a {
-    color:#59a4c8;
-    display: block;
-    padding: 0.1rem 0.2rem;
-    border: 1px solid transparent;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+  color: #59a4c8;
+  display: block;
+  padding: 0.1rem 0.2rem;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
-.cron_builder .nav-tabs .nav-link:focus, .cron_builder .nav-tabs .nav-link:hover {
-    border-color: transparent transparent transparent;
-    background-color: #eeeeee;
+.cron_builder .nav-tabs .nav-link:focus,
+.cron_builder .nav-tabs .nav-link:hover {
+  border-color: transparent transparent transparent;
+  background-color: #eeeeee;
 }
-.cron_builder .nav-tabs .nav-item.show .nav-link, .cron_builder .nav-tabs .nav-link.active {
-    border-color: #e9e9e9 #e9e9e9 #fff;
-    background-color: #ffffff;
+.cron_builder .nav-tabs .nav-item.show .nav-link,
+.cron_builder .nav-tabs .nav-link.active {
+  border-color: #e9e9e9 #e9e9e9 #fff;
+  background-color: #ffffff;
 }
-.cron_builder { 
-    font-size: 14px;
+.cron_builder {
+  font-size: 14px;
 }
 .cron_builder .well {
-    min-height: 20px;
-    padding: 19px;
-    margin-bottom: 15px;
-    line-height: 24px;
-    background-color: #f8f8f8;
-    border: 1px solid #f3f3f3;
-    border-radius: 4px;
-    box-shadow: 0 none;
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 15px;
+  line-height: 24px;
+  background-color: #f8f8f8;
+  border: 1px solid #f3f3f3;
+  border-radius: 4px;
+  box-shadow: 0 none;
 }
 .cron_builder .cron_help_link {
-   width: 100%;
-   margin: -6px 0 10px;
-   line-height: 16px;
-   text-align: right;
-   font-size: 12px;
-   color:#818181;
+  width: 100%;
+  margin: -6px 0 10px;
+  line-height: 16px;
+  text-align: right;
+  font-size: 12px;
+  color: #818181;
 }
-.cron_builder .cron_help_link a{
-   cursor: pointer;
-   text-decoration: underline;
-   color: #59a4c8;
+.cron_builder .cron_help_link a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #59a4c8;
 }
-@media screen and (max-width:767px) {
-    .cron_builder .nav li {
-        cursor: pointer;
-        flex: 0 0 65px;
-        text-align: center;
-    }
+.well_question_icon {
+  display: inline-block;
+  line-height: 30px;
+}
+.well_question_icon span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 16px;
+}
+.error_tips {
+  width: 100%;
+  margin: -6px 0 0;
+  line-height: 16px;
+  text-align: right;
+  font-size: 12px;
+  height: 16px;
+}
+.error_tips span {
+  color: red;
+}
+@media screen and (max-width: 767px) {
+  .cron_builder .nav li {
+    cursor: pointer;
+    flex: 0 0 65px;
+    text-align: center;
+  }
 }

@@ -10,6 +10,8 @@ original author is **Sojin antony**
 
 install `npm install vue2-cron-builder`
 
+**Notice**: the version > 1.1.0 has limited the minutes value to no less than 5 on the minutes tab. There will show an error message if you input a value of 1-4 or >60.
+
 ```javascript
 <template>
   <Cron showResultCron="true" :cron="cron" showResultText="true" @cron-change="valChanged"/>
@@ -39,16 +41,16 @@ export default {
 ```
 
 ### Props
-| Prop | Description | Default | Mandatory
-| --- | --- | -- | -- |
-| cron | cron expression  |  |  No |
-| cron-change |  |  | Yes
-| showResultText | show in readable text format | false | No
-| showResultCron | show cron expression | false | No
-| translation | translation object | default translation(en) | No
-| locale | locale for cronstrue | en | No
-| options | Options for Cron component, *Must pass a valid cron value for available headers | All available headers | No
 
+| Prop           | Description                                                                      | Default                 | Mandatory |
+| -------------- | -------------------------------------------------------------------------------- | ----------------------- | --------- |
+| cron           | cron expression                                                                  |                         | No        |
+| cron-change    |                                                                                  |                         | Yes       |
+| showResultText | show in readable text format                                                     | false                   | No        |
+| showResultCron | show cron expression                                                             | false                   | No        |
+| translation    | translation object                                                               | default translation(en) | No        |
+| locale         | locale for cronstrue                                                             | en                      | No        |
+| options        | Options for Cron component, \*Must pass a valid cron value for available headers | All available headers   | No        |
 
 **translation**
 
@@ -68,8 +70,5 @@ const options = {
 };
 
 ```
-for more info, please check original author's github [here](https://github.com/sojinantony01/cron-generator-vue) 
 
-
-
-
+for more info, please check original author's github [here](https://github.com/sojinantony01/cron-generator-vue)

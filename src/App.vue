@@ -1,28 +1,32 @@
 <template>
-  <Cron  showResultCron="true" :cron="cron" showResultText="true" @cron-change="valChanged"/>
+  <Cron
+    showResultCron="true"
+    :cron="cron"
+    showResultText="true"
+    @cron-change="valChanged"
+  />
 </template>
 
 <script>
-import Cron from './lib/cron.vue'
-import './lib/cron.css'
-
+import Cron from "./lib/cron.vue";
+import "./lib/cron.css";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Cron
+    Cron,
   },
   data() {
     return {
-      cron : '0 0 4 ? * MON *',
-    }
+      cron: "0 0 4 ? * MON *",
+    };
   },
   methods: {
     valChanged(val) {
-      this.cron = val
-    }
+      this.cron = val;
+    },
   },
-}
+};
 </script>
 
 <style>

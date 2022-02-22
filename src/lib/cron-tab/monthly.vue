@@ -1,6 +1,9 @@
 <template>
    <div class="tab-pane" >
         <div class="well well-small">
+            <div class="well_question_icon">
+                <span title="For example: value '3' means 'execute on the 3rd day of every month'">?</span>
+            </div>
             <input type="radio" @change="everyMonthDay" value="1" name="MonthlyRadio" :checked="value[4] == '1/1'" />
             {{ $parent.translate('Day') }}
             <input :disabled="value[4] != '1/1'"  type="number" :value="this.value[3]" @input="onDayChange" />

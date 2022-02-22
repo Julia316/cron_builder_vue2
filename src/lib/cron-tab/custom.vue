@@ -4,7 +4,7 @@
         {{$parent.translate('Cron Expression')}} <input type="text" @input="onChange" :value="this.value.toString().replace(/,/g,' ').replace(/!/g, ',')" />
     </div>
     <div class="cron_help_link">
-        Please check <a href="http://www.quartz-scheduler.org/documentation/quartz-2.2.x/tutorials/tutorial-lesson-06.html" target="_blank">Cron reference</a> for formatting help
+        Please check <a href="http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html" target="_blank">Cron reference</a> for formatting help
     </div>   
 </div>
 </template>

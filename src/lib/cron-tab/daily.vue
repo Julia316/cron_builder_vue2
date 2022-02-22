@@ -1,6 +1,9 @@
 <template>
     <div class="tab-pane" >
         <div class="well well-small">
+            <div class="well_question_icon">
+                <span title="For example: value '10' means 'execute on the 10th, 20th, 30th day of every month'">?</span>
+            </div>
             <input type="radio" @change="everyDay" :checked="value[3].indexOf('/') != -1" />
             <span>{{$parent.translate('Every')}}</span>
             <input :disabled="value[3].indexOf('/') == -1"  type="number" @input="onDayChange" :value="this.value[3].split('/')[1] ? this.value[3].split('/')[1] :''" :max="31" maxLength="2" />
